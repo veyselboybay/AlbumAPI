@@ -1,9 +1,15 @@
 using Assignment_One_Revise;
+using Assignment_One_Revise.Repository;
+using Assignment_One_Revise.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// DI
+builder.Services.AddScoped<IImageRepository,ImageRepository>();
+builder.Services.AddScoped<IAlbumRepository,AlbumRepository>();
+builder.Services.AddScoped<IImageService,ImageService>();
+builder.Services.AddScoped<IAlbumService,AlbumService>();
 // Connection String
 var connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING");
 if (connectionString == null)
@@ -15,6 +21,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
                                                             options.UseNpgsql(connectionString));
 
 
+// Add services to the container.
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
