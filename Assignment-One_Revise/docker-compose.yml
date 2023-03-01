@@ -1,0 +1,26 @@
+﻿version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: api
+    ports:
+     - "5001:80"
+    depends_on:
+     - db
+    restart: always
+    environment:
+     - CONNECTION_STRING=Server=db;Database=AlbumApi;User Id=developer;Password=secret;
+     - S3_USER_ID=AKIAVKLIR5FRDAICRI5A
+     - S3_SECRET=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
+     - S3_BUCKET_NAME=albumapi
+  db:
+    image: postgres:15.2-alpine
+    volumes:
+     - ./database:/var/lib/postgresql/data
+    ports:
+     - 5432:5432
+    environment:
+     - POSTGRES_DB=AlbumApi
+     - POSTGRES_USER=developer
+     - POSTGRES_PASSWORD=secret 

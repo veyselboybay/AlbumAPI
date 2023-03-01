@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1ARXFSp7QmwSDQTC1uUu4gOp1T2wNyJh2prvQFpfy5L1Y6bBJrJTK+nDIZd65XdmvcNXG6X5DpqojYvNzIqyzw==",
+  "dgSpecHash": "lMsJy4cbGzRF7N6gP5x5Fj2Cg3Aac8GSqVxT2+3rg+3b5JbJeIBu0PIyVN5qg2RhM6A3e6kUwpnnfKbesEQx/w==",
   "success": true,
   "projectFilePath": "C:\\Users\\veyse\\Desktop\\School\\6th semester - Winter 2023\\API Eng & Cloud Computing\\Assignment-One_Revise\\Assignment-One_Revise\\Assignment-One_Revise.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "C:\\Users\\veyse\\.nuget\\packages\\microsoft.extensions.options\\8.0.0-preview.1.23110.8\\microsoft.extensions.options.8.0.0-preview.1.23110.8.nupkg.sha512",
     "C:\\Users\\veyse\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0-preview.1.23110.8\\microsoft.extensions.primitives.8.0.0-preview.1.23110.8.nupkg.sha512",
     "C:\\Users\\veyse\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\veyse\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512",
     "C:\\Users\\veyse\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\veyse\\.nuget\\packages\\npgsql\\7.0.2\\npgsql.7.0.2.nupkg.sha512",
     "C:\\Users\\veyse\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.3\\npgsql.entityframeworkcore.postgresql.7.0.3.nupkg.sha512",
