@@ -56,11 +56,12 @@ namespace Assignment_One_Revise.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> ListAlbums()
         {
             try
             {
-                return await _albumService.GetAll();
+                return Ok(await _albumService.GetAll());
             }catch(Exception ex)
             {
                 _logger.LogError(ex.ToString());

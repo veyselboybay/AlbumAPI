@@ -1,6 +1,6 @@
 ﻿namespace Assignment_One_Revise.Repository
 {
-    public class BaseRepository
+    public abstract class BaseRepository
     {
         protected readonly ApplicationDbContext _dbContext;
         public BaseRepository(ApplicationDbContext dbContext)

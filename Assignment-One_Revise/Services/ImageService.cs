@@ -6,8 +6,8 @@ namespace Assignment_One_Revise.Services
 {
     public class ImageService : IImageService
     {
-        private readonly ImageRepository _imageRepo;
-        public ImageService(ImageRepository imageRepo)
+        private readonly IImageRepository _imageRepo;
+        public ImageService(IImageRepository imageRepo)
         {
             _imageRepo = imageRepo;
         }

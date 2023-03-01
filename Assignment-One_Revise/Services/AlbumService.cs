@@ -6,9 +6,9 @@ namespace Assignment_One_Revise.Services
 {
     public class AlbumService : IAlbumService
     {
-        private readonly AlbumRepository _albumRepo;
+        private readonly IAlbumRepository _albumRepo;
 
-        public AlbumService(AlbumRepository albumRepo)
+        public AlbumService(IAlbumRepository albumRepo)
         {
             _albumRepo = albumRepo;
         }
