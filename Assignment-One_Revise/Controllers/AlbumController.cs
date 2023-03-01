@@ -46,7 +46,7 @@ namespace Assignment_One_Revise.Controllers
             try
             {                
                 _logger.LogInformation("New Album is deleted:"+album_id);
-               return (IActionResult)await _albumService.Delete(album);
+               return Ok(await _albumService.Delete(album));
             }
             catch(Exception ex)
             {
