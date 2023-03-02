@@ -105,7 +105,7 @@ namespace Assignment_One_Revise.Controllers
 
             try
             {
-                return Ok(images.Where(i => i.AlbumId == album_id).FirstOrDefault());
+                return Ok(images.Where(i => i.AlbumId == album_id).ToList());
                 
             } catch(Exception ex)
             {
