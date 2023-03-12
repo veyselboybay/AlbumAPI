@@ -25,5 +25,5 @@ jobs:
          REPOSITORY: albumapi
          IMAGE_TAG: latest
        run: | 
-          docker build ./Assignment-One_Revise/. --tag my-image-name:$(date +%s)
+          docker build ./Assignment-One_Revise/. --tag my-image-name:$IMAGE_TAG
           docker push $REGISTERY/$REPOSITORY:$IMAGE_TAG
