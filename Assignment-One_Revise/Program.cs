@@ -19,7 +19,7 @@ if (connectionString == null)
     connectionString = builder.Configuration.GetConnectionString("AlbumApi");
 }
 // Register DB config
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connectionString));
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 
 
 // Add services to the container.
